@@ -18,6 +18,7 @@
 <!-- package must inherit this module.                                      -->
 <!--                                                                        -->
 <module>
+  <servlet path="/testRequest/*" class="com.progressoft.brix.domino.xhr.server.SampleServlet" />
   <inherits name="com.progressoft.brix.domino.xhr.XMLHttpRequest"/>
   <source path="client" />
   <public path="public" />

@@ -1,5 +1,6 @@
 package com.progressoft.brix.domino.xhr.client;
 
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.junit.client.GWTTestCase;
 
 import java.util.logging.Logger;
@@ -16,8 +17,13 @@ public class XMLHttpRequestTest extends GWTTestCase {
 
     public void testCreateXmlHttpRequest() {
         XMLHttpRequest xmlHttpRequest = XMLHttpRequest.create();
-
+        xmlHttpRequest.open("GET", getTestBaseURL()+"/test");
+        xmlHttpRequest.send();
         assertNotNull(xmlHttpRequest);
         assertEquals(xmlHttpRequest.getStatus(), UNSENT);
+    }
+
+    private static String getTestBaseURL() {
+        return GWT.getModuleBaseURL() + "testRequest/";
     }
 }
