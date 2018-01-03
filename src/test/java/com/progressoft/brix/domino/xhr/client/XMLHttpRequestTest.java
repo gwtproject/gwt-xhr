@@ -11,7 +11,7 @@ public class XMLHttpRequestTest extends GWTTestCase {
 
     @Override
     public String getModuleName() {
-        return "com.progressoft.brix.domino.xhr.XMLHttpRequest";
+        return "com.progressoft.brix.domino.xhr.XMLHttpRequestTest";
     }
 
     public void testCreateXmlHttpRequest() {
