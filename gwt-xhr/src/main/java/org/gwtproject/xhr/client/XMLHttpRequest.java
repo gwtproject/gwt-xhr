@@ -379,7 +379,7 @@ public class XMLHttpRequest {
    *     server.
    * @return
    */
-  public final native String overrideMimeType(String mimeType);
+  public final native void overrideMimeType(String mimeType);
 
   /** The type of response expected from the XHR. */
   public enum ResponseType {
